@@ -1,0 +1,94 @@
+/* ==========================================================================
+   MODULES
+   ========================================================================== */
+//////////////////////////////// HEADLINES
+%heading {
+  margin-top: 20px;
+  margin-bottom: 2px;
+  font-size: $text-size__heading;
+}
+
+//////////////////////////////// HEADER
+.header__title {
+  @include hide-text();
+}
+.header__title-link {
+  display: block;
+  width: 160px;
+  height: 160px;
+  background-image: url('../images/logo.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+//////////////////////////////// CONTENTS
+.findme__heading {
+  @extend %heading;
+}
+.about__heading {
+  @extend %heading;
+}
+.contact__heading {
+  @extend %heading;
+}
+
+
+.findme {
+  margin: 60px auto;
+}
+.findme__items {
+  font-size: 36px;
+}
+.findme__items-small {
+  font-size: 18px;
+  line-height: 32px;
+}
+.findme__item-cell {
+  display: block;
+}
+
+%findme__item {
+  display: inline-block;
+  &:before {
+    display: inline-block;
+    font-family: FontAwesome;
+    width: 40px;
+    margin-right: 4px;
+    text-align: center;
+  }
+}
+.findme__item-twitter {
+  @extend %findme__item;
+  &:before {
+    content: "\f099";
+  }
+}
+.findme__item-dribbble {
+  @extend %findme__item;
+  &:before {
+    content: "\f17d";
+  }
+}
+.findme__item-blog {
+  @extend %findme__item;
+  &:before {
+    content: "\f0f6";
+  }
+  &:after {
+    content: "(in Japanese)";
+    font-size: 24px;
+    margin-left: 5px;
+  }
+}
+
+.contact {
+  margin: 60px auto;
+}
+
+//////////////////////////////// FOOTER
+.footer {
+  margin: 60px auto 20px;
+}
+.footer__copyright {
+  font-size: $text-size__small;
+}

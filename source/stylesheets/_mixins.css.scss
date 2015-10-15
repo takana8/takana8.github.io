@@ -1,0 +1,5 @@
+// Background image for retina display
+@mixin background-image-2x($path) {
+  background-image: image-url($path);
+  background-size: (image-width($path) / 2) auto;
+}
