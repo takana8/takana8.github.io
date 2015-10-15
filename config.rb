@@ -53,9 +53,7 @@ end
 # end
 
 set :css_dir, 'stylesheets'
-
 set :js_dir, 'javascripts'
-
 set :images_dir, 'images'
 
 # Build-specific configuration
@@ -77,8 +75,11 @@ configure :build do
   # set :http_prefix, "/Content/images/"
 end
 
-
+# Activate middleman-deploy
 activate :deploy do |deploy|
     deploy.method = :git
     deploy.branch = 'master'
 end
+
+# Pretty URLs
+activate :directory_indexes
