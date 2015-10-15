@@ -11,8 +11,6 @@
 //////////////////////////////// HEADER
 .header__title {
   @include hide-text();
-}
-.header__title-link {
   display: block;
   width: 160px;
   height: 160px;
