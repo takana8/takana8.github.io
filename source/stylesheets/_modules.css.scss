@@ -20,6 +20,12 @@
 }
 
 //////////////////////////////// CONTENTS
+.works__heading {
+  @extend %heading;
+}
+.outputs__heading {
+  @extend %heading;
+}
 .findme__heading {
   @extend %heading;
 }
@@ -30,6 +36,31 @@
   @extend %heading;
 }
 
+.greeting {
+  margin-top: 40px;
+  margin-bottom: 40px;
+  font-weight: bold;
+}
+
+.works {
+  margin-top: 40px;
+}
+.works__items {
+  list-style-type: disc;
+  list-style-position: inside;
+  margin-left: 20px;
+  font-weight: bold;
+}
+
+.outputs {
+  margin-top: 40px;
+}
+.outputs__items {
+  list-style-type: disc;
+  list-style-position: inside;
+  margin-left: 20px;
+  font-weight: bold;
+}
 
 .findme {
   margin: 60px auto;
@@ -42,41 +73,25 @@
   line-height: 32px;
 }
 .findme__item-cell {
-  display: block;
+  display: inline-block;
+  width: 40px;
+  margin-right: 4px;
 }
 
 %findme__item {
   display: inline-block;
-  &:before {
-    display: inline-block;
-    font-family: FontAwesome;
-    width: 40px;
-    margin-right: 4px;
-    text-align: center;
-  }
 }
 .findme__item-twitter {
   @extend %findme__item;
-  &:before {
-    content: "\f099";
-  }
+}
+.findme__item-facebook {
+  @extend %findme__item;
 }
 .findme__item-dribbble {
   @extend %findme__item;
-  &:before {
-    content: "\f17d";
-  }
 }
-.findme__item-blog {
+.findme__item-tumblr {
   @extend %findme__item;
-  &:before {
-    content: "\f0f6";
-  }
-  &:after {
-    content: "(in Japanese)";
-    font-size: 24px;
-    margin-left: 5px;
-  }
 }
 
 .contact {
