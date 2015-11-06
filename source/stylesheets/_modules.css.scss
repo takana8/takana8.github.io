@@ -47,9 +47,11 @@
 }
 .works__items {
   list-style-type: disc;
-  list-style-position: inside;
   margin-left: 20px;
   font-weight: bold;
+}
+.works__item-cell {
+  margin-bottom: 4px;
 }
 
 .outputs {
@@ -57,14 +59,17 @@
 }
 .outputs__items {
   list-style-type: disc;
-  list-style-position: inside;
   margin-left: 20px;
   font-weight: bold;
   .outputs__items {
     font-size: $text-size__small;
-    line-height: 1.5;
+    line-height: 1.4;
   }
 }
+.outputs__item-cell {
+  margin-bottom: 4px;
+}
+
 
 .findme {
   margin: 60px auto;
@@ -100,6 +105,9 @@
 
 .contact {
   margin: 60px auto;
+}
+.contact__content {
+  margin-top: 0;
 }
 
 //////////////////////////////// FOOTER
