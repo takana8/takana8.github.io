@@ -60,6 +60,10 @@
   list-style-position: inside;
   margin-left: 20px;
   font-weight: bold;
+  .outputs__items {
+    font-size: $text-size__small;
+    line-height: 1.5;
+  }
 }
 
 .findme {
