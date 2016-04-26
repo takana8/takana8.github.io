@@ -1,0 +1,102 @@
+///////////////////////////////
+// Modules
+///////////////////////////////
+.logo
+  display: block
+  width: 240px
+  height: auto
+  margin: 100px auto 0
+  path
+    fill: $color__text-main
+
+.section-heading
+  margin: 200px auto 20px
+  text-transform: uppercase
+  &.theme--sub
+    margin: 80px auto 20px
+
+
+.intro__findme
+  display: block
+  margin: 0 auto
+
+.intro__findme-item
+  display: inline-block
+  margin-left: 20px
+  &:first-child
+    margin-left: 0
+
+
+.works__item
+  display: block
+  margin: 120px auto
+  &:first-child
+    margin-top: 40px
+
+.works__text-cell
+  display: block
+  // display: none
+  margin: 20px auto 0
+
+.works__image-cell
+  display: block
+  margin: 0 auto
+
+.works__image
+  display: block
+  width: 100%
+  margin: 0 auto
+
+.works__embed-slide
+  display: block
+  position: relative
+  width: 100%
+  height: auto
+  padding-bottom: 80.25%
+  iframe
+    position: absolute
+    top: 0
+    left: 0
+    width: 100% !important
+    max-width: 1000px
+    height: 100% !important
+
+
+.profile
+  display: block
+  margin: 40px auto 0
+  padding-bottom: 60px
+  text-align: left
+  border-top: 1px solid $color__fill-dull
+  border-bottom: 1px solid $color__fill-dull
+
+.profile__items
+  list-style-type: none
+  margin-left: 2.0rem
+
+.profile__item
+  display: inline-block
+  margin-right: 40px
+  text-indent: -2.0rem
+  &:last-child
+    margin-right: 0
+
+.profile__items.theme--block
+  .profile__item
+    display: block
+
+
+.footer-copyright
+  display: block
+  margin: 80px auto
+  font-size: 75%
+
+
+@media screen and (max-width: $media-xs)
+  .logo
+    margin: 80px auto 0
+
+  .section-heading
+    margin: 120px auto 20px
+    &.theme--sub
+      margin: 60px auto 20px

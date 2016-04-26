@@ -2,72 +2,134 @@
 title: Kanako Fukiage
 ---
 
-.l-background
+.layout__main
 
-.l-container
+  h1.logo
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 480" class="logo"><title>takana8</title><path d="M240.391,90.326c-82.707,0-150,67.287-150,150s67.291,150,150,150,150-67.291,150-150S323.1,90.326,240.391,90.326Zm0,12.228c65.461,0,120.363,45.9,134.314,107.194H106.083C120.031,148.456,174.933,102.555,240.391,102.555Zm0,275.545c-75.967,0-137.77-61.807-137.77-137.778a138.08,138.08,0,0,1,1.259-18.344h7.278v21.616a6.114,6.114,0,0,0,12.228,0V221.978h18.545v35.481a6.116,6.116,0,0,0,12.231,0V221.978h18.554v21.616a6.113,6.113,0,1,0,12.225,0V221.978H203.5v21.616a6.113,6.113,0,1,0,12.225,0V221.978h18.554v21.616a6.114,6.114,0,0,0,12.228,0V221.978h18.555v21.616a6.114,6.114,0,0,0,12.229,0V221.978H295.84v49.345a6.116,6.116,0,0,0,12.231,0V221.978h18.551v21.616a6.114,6.114,0,0,0,12.229,0V221.978h18.555v21.616a6.113,6.113,0,0,0,12.226,0V221.978h7.275a138,138,0,0,1,1.256,18.344C378.164,316.293,316.361,378.1,240.391,378.1Z"/><path d="M257.653,312.32q10.249-7.652,10.256-19.717a25.608,25.608,0,0,0-7.767-19.114q-7.768-7.642-19.417-7.643a27.052,27.052,0,0,0-19.593,7.643,25.553,25.553,0,0,0-7.822,19.052,23.027,23.027,0,0,0,10.311,19.838q-12.68,6.308-12.676,22.082a26.511,26.511,0,0,0,8.5,20.141q8.441,8,21.439,8.008,12.694,0,20.833-7.952t8.135-20.382a25.9,25.9,0,0,0-3.336-13.1A21.683,21.683,0,0,0,257.653,312.32ZM230.72,282.772a13.985,13.985,0,1,1-.062,19.775,13.669,13.669,0,0,1-4.065-10.067A13.281,13.281,0,0,1,230.72,282.772ZM251.352,345.2a15.47,15.47,0,0,1-21.98-.061,15.552,15.552,0,0,1-4.474-11.155,14.858,14.858,0,0,1,4.536-10.865A15.557,15.557,0,0,1,251.352,345.2Z"/></svg>
 
-  .l-header
-    header.header
-      h1.header__title takana8
+  .intro
+    | 骨とワニが好きなデザイナーです。
+    .intro__findme
+      = link_to '<i class="fa fa-twitter"></i>', 'https://twitter.com/takana8', class: 'intro__findme-item', target: '_blank'
+      = link_to '<i class="fa fa-dribbble"></i>', 'http://dribbble.com/takana8', class: 'intro__findme-item', target: '_blank'
+      = link_to '<i class="fa fa-tumblr"></i>', 'http://takana8.tumblr.com', class: 'intro__findme-item', target: '_blank'
+      = link_to 'Blog', 'http://takana8.hatenablog.com', class: 'intro__findme-item', target: '_blank'
 
-  .l-content
+  h2.section-heading Contact
+  p
+    a href="mailto:takana8@live.jp" &#116;&#97;&#107;&#97;&#110;&#97;&#56;&#64;&#108;&#105;&#118;&#101;&#46;&#106;&#112;
 
-    .greeting
-      p.greeting__content
-        | 骨とワニが好きなデザイナーです。
+  h2.section-heading Works
+  .works
+    .works__item
+      == link_to "http://100.takana8.com", class: "works__image-cell"
+        == image_tag "100.png", alt: "", class: "works__image"
+      .works__text-cell
+        = link_to '100 Days Challenge', 'http://100.takana8.com', class: 'works__title'
 
-    .works
-      h2.works__heading Works
-      ul.works__items
-        li.works__item-cell
-          = link_to 'Behance', 'https://www.behance.net/takana8', class: 'works__item-behance', target: '_blank'
-        li.works__item-cell
-          = link_to '1日1イラスト100日間チャレンジ', 'http://100.takana8.com', class: 'works__item-100', target: '_blank'
+    .works__item
+      == link_to "https://www.behance.net/gallery/30921371/Answer-Live", class: "works__image-cell"
+        == image_tag "answer.png", alt: "", class: "works__image"
+      .works__text-cell
+        = link_to 'Answer Live', 'https://www.behance.net/gallery/30921371/Answer-Live', class: 'works__title'
 
-    .outputs
-      h2.outputs__heading Outputs
-      ul.outputs__items
-        li.outputs__item-cell
-          = link_to 'Blog', 'http://takana8.hatenablog.com', class: 'outputs__item-blog', target: '_blank'
+    .works__item
+      == link_to "http://takana8.hatenablog.com/entry/waiwai-cafe-wallet-facilitation", class: "works__image-cell"
+        == image_tag "waiwai.png", alt: "", class: "works__image"
+      .works__text-cell
+        = link_to 'UXワイワイCAFEにて、はじめての！ワークショップ・ファシリテーター', 'http://takana8.hatenablog.com/entry/waiwai-cafe-wallet-facilitation', class: 'works__title'
 
-          ul.outputs__items
-            li.outputs__item-cell
-              = link_to 'ワニが好きな理由を上位下位関係分析してみた', 'http://takana8.hatenablog.com/entry/laddering_wani', class: 'outputs__item', target: '_blank'
-            li.outputs__item-cell
-              = link_to '1日1枚イラストを描く取り組み、#今日のworkはじめました', 'http://takana8.hatenablog.com/entry/work-a-day-2015', class: 'outputs__item', target: '_blank'
-            li.outputs__item-cell
-              = link_to 'UXワイワイCAFEにて、はじめての！ワークショップ・ファシリテーター', 'http://takana8.hatenablog.com/entry/waiwai-cafe-wallet-facilitation', class: 'outputs__item', target: '_blank'
+    .works__item
+      == link_to "http://takana8.hatenablog.com/entry/laddering_wani", class: "works__image-cell"
+        == image_tag "laddering.png", alt: "", class: "works__image"
+      .works__text-cell
+        = link_to 'ワニが好きな理由を上位下位関係分析してみた', 'http://takana8.hatenablog.com/entry/laddering_wani', class: 'works__title'
 
-        li.outputs__item-cell
-          = link_to 'Presentation', 'http://www.slideshare.net/kanakotakehara/presentations', class: 'outputs__item-slideshare', target: '_blank'
+    .works__item
+      .works__embed-slide
+        iframe allowfullscreen="" frameborder="0" height="485" marginheight="0" marginwidth="0" scrolling="no" src="//www.slideshare.net/slideshow/embed_code/key/iIh22ntooI9La5" width="595" 
+      .works__text-cell
+        a href="//www.slideshare.net/kanakotakehara/ux-46114731" target="_blank" title="ワニと学ぶ！UXデザイン入門"  ワニと学ぶ！UXデザイン入門
 
-          ul.outputs__items
-            li.outputs__item-cell
-              = link_to 'I was bone to love Design', 'http://www.slideshare.net/kanakotakehara/i-was-bone-to-love-design', class: 'outputs__item', target: '_blank'
-            li.outputs__item-cell
-              = link_to 'ワニと学ぶ！UXデザイン入門', 'http://www.slideshare.net/kanakotakehara/ux-46114731', class: 'outputs__item', target: '_blank'
-            li.outputs__item-cell
-              = link_to '日本発グローバルWebメディアのタイポグラフィ設計', 'http://www.slideshare.net/kanakotakehara/150530-presen-frontend', class: 'outputs__item', target: '_blank'
+    .works__item
+      == link_to "https://www.behance.net/gallery/30920231/IGNITION", class: "works__image-cell"
+        == image_tag "ignition.png", alt: "", class: "works__image"
+      .works__text-cell
+        = link_to 'IGNITION', 'https://www.behance.net/gallery/30920231/IGNITION', class: 'works__title'
 
-    .findme
-      h2.findme__heading Find me on
-      ul.findme__items
-        li.findme__item-cell
-          = link_to '<i class="fa fa-twitter"></i>', 'https://twitter.com/takana8', class: 'findme__item-twitter', target: '_blank'
-        li.findme__item-cell
-          = link_to '<i class="fa fa-facebook-square"></i>', 'https://www.facebook.com/kanako.takehara', class: 'findme__item-facebook', target: '_blank'
-        li.findme__item-cell
-          = link_to '<i class="fa fa-dribbble"></i>', 'http://dribbble.com/takana8', class: 'findme__item-dribbble', target: '_blank'
-        li.findme__item-cell
-          = link_to '<i class="fa fa-tumblr"></i>', 'http://takana8.tumblr.com', class: 'findme__item-tumblr', target: '_blank'
+    .works__item
+      .works__embed-slide
+        iframe allowfullscreen="" frameborder="0" height="485" marginheight="0" marginwidth="0" scrolling="no" src="//www.slideshare.net/slideshow/embed_code/key/2tWFPJtzWATxhW" width="595" 
+      .works__text-cell
+        a href="//www.slideshare.net/kanakotakehara/alice-in-biology" target="_blank" title=("Alice in Biology ―鏡の国の生物学―")  Alice in Biology ―鏡の国の生物学―
 
-    .contact
-      h2.contact__heading Contact
-      p.contact__content
-        = mail_to 'takana8@live.jp'
+    .works__item
+      .works__embed-slide
+        iframe allowfullscreen="" frameborder="0" height="485" marginheight="0" marginwidth="0" scrolling="no" src="//www.slideshare.net/slideshow/embed_code/key/Dg2sVN5jLacLzg" width="595" 
+      .works__text-cell
+        a href="//www.slideshare.net/kanakotakehara/i-was-bone-to-love-design" target="_blank" title=("I was bone to love Design")  I was bone to love Design
 
+    .works__item
+      == link_to "https://www.behance.net/gallery/30920143/Fried-Chicken-Bone", class: "works__image-cell"
+        == image_tag "friedchickenbone.png", alt: "", class: "works__image"
+      .works__text-cell
+        = link_to 'Fried Chicken Bone', 'https://www.behance.net/gallery/30920143/Fried-Chicken-Bone', class: 'works__title'
 
-  .l-footer
-    footer.footer
-      small.footer__copyright
-        = "© #{Date.today.year} Kanako Fukiage"
+    .works__item
+      == link_to "https://www.behance.net/gallery/30918995/someone-vol09-vol27", class: "works__image-cell"
+        == image_tag "someone.png", alt: "", class: "works__image"
+      .works__text-cell
+        = link_to 'someone', 'https://www.behance.net/gallery/30918995/someone-vol09-vol27', class: 'works__title'
+
+    .works__item
+      == link_to "https://www.behance.net/gallery/31280945/Imagination", class: "works__image-cell"
+        == image_tag "imagination.png", alt: "", class: "works__image"
+      .works__text-cell
+        = link_to 'Imagination', 'https://www.behance.net/gallery/31280945/Imagination', class: 'works__title'
+
+  h2.section-heading Profile
+  .profile
+    h3.section-heading.theme--sub Skills
+    ul.profile__items
+      li.profile__item Photoshop
+      li.profile__item Illustrator
+      li.profile__item InDesign
+      li.profile__item After Effects
+      li.profile__item Sketch
+      li.profile__item Slim
+      li.profile__item Sass
+      li.profile__item CUI
+      li.profile__item Typography
+      li.profile__item Prototyping
+      li.profile__item Wireframing
+      li.profile__item User research
+      li.profile__item Taking minutes
+      li.profile__item Working as a collaborative team member
+
+    h3.section-heading.theme--sub Work Experience
+    ul.profile__items.theme--block
+      li.profile__item 2014-2016, nanapi Inc., Designer
+
+    h3.section-heading.theme--sub Education
+    ul.profile__items.theme--block
+      li.profile__item 2013-2014, Digital Hollywood School, Digital Design Course
+      li.profile__item 2011-2013, The University of Tokyo, Master of Science
+      li.profile__item 2007-2011, Tokyo University of Agriculture and Technology, Bacheler of Agriculture
+
+    h3.section-heading.theme--sub Find Me on
+    ul.profile__items
+      li.profile__item
+        = link_to 'Twitter', 'https://twitter.com/takana8', target: '_blank'
+      li.profile__item
+        = link_to 'Dribbble', 'http://dribbble.com/takana8', target: '_blank'
+      li.profile__item
+        = link_to 'Tumblr', 'http://takana8.tumblr.com', target: '_blank'
+      li.profile__item
+        = link_to 'Blog', 'http://takana8.hatenablog.com', target: '_blank'
+
+    h3.section-heading.theme--sub Contact
+    p
+      a href="mailto:takana8@live.jp" &#116;&#97;&#107;&#97;&#110;&#97;&#56;&#64;&#108;&#105;&#118;&#101;&#46;&#106;&#112;
+
+  small.footer-copyright
+    = "© #{Date.today.year} Kanako Fukiage"
