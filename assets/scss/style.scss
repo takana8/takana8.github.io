@@ -1,0 +1,18 @@
+@charset "UTF-8";
+
+@import "reset";
+@import "style";
+@import "responsive";
+@import "animate";
+
+/*------- print -------*/
+@media print {
+  * html body {
+    zoom: 0.7;
+  }
+  body {
+    background-color: #fff;
+    font-size: 12px;
+  }
+}
+
